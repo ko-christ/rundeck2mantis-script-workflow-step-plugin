@@ -1,0 +1,37 @@
+name: rundeck2mantis script-based workflow step plugin
+version: 1.0
+rundeckPluginVersion: 1.0
+author: Konstantinos Christidis ~ kochrist@ekt.gr
+author: Michael Angelos Simos ~ simos@ekt.gr
+date: 18/07/14
+providers:
+  - name: rundeck2mantis-workflow-step
+    service: WorkflowStep
+    title: rundeck2mantis Script Workflow Step
+    description: Attach output of a Rundeck job to Mantis Bug Tracker
+    plugin-type: script
+    script-interpreter: /usr/bin/python
+    script-file: rundeck2mantis.py
+    script-args:
+    config:
+      - type: Boolean
+        name: asif
+        title: Post to mantis
+        description: Check to post, uncheck to skip posting
+        default: true
+      - type: Integer
+        name: number
+        title: Mantis id
+        description: Mantis Ticket Id
+        default: 
+      - type: String
+        name: projectrundeck2mantis
+        title: rundeck2mantis Project scope property
+        description: An rundeck2mantis string scoped to Project or Framework level configuration
+        default: whatever
+        scope: Project
+      - type: String
+        name: fwkrundeck2mantis
+        title: rundeck2mantis Framework scope property
+        description: An rundeck2mantis string scoped to Framework level configuration with no default
+        scope: Framework
