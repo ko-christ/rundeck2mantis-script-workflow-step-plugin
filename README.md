@@ -31,7 +31,7 @@ Python 2.6+ and Python modules
 Usage
 =====
 
-Plugin should be available under Job Create/Edit form, `Add a Step` -> `Workflow Steps`
+Plugin should be available under Job Create/Edit form, `Add a Step` -> `Workflow Steps`.
 Use it as a last workflow step plugin.
 
 Files
