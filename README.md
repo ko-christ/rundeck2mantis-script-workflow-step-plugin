@@ -57,15 +57,15 @@ Configuration File
 =====
 
 `rundeck2mantis.conf` configuration file with the following options:
-`[MANTIS]` 
+
 `MANTISURL` = `https://support.mycompany.com/api/soap/mantisconnect.php?wsdl` 	# `MantisBT SOAP API URL`
+
 `USERNAME` = `administrator` 	# `a MantisBT user with suitable access level, usually the administrator`
+
 `PASSWD` = `root`
 
-`[TOKENS]`
 `TOKEN` = `Rda218eba1ff45jk7858b8ae88a77fN2` 	# `Sample Rundeck API Token to use.`
 
-`[API]`
 `API_V` = `11` 		# `API Version to use. Default 11.`
 
 Plugin metadata
