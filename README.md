@@ -1,7 +1,7 @@
 rundeck2mantis-script-workflow-step-plugin
 ------
 
-This directory contains a Rundeck script-based Workflow Step Plugin to attach output of a Rundeck job to a Mantis Bug Tracker ticket.
+This is a Rundeck script-based Workflow Step Plugin to attach output of a Rundeck job to a Mantis Bug Tracker ticket.
 
 Build
 ====
